@@ -1,0 +1,118 @@
+<div class="red-t my-4  font-weight-bold text-center regist-head">  PLEASE ENTER YOUR <br/>MOBILE NUMBER </div>
+
+
+
+.regist-head{
+  position:relative;
+}
+.regist-head:before{
+   background: url(../img/bottle1.png) no-repeat;
+   background-repeat:no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   left:2%;
+   top:0;
+}
+.regist-head:after{
+   background: url(../img/bottle2.png) no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   right:2%;
+   top:0;
+}
+
+
+------------------------
+
+
+
+
+<div class="container mb-2">
+  <div class="col-md-12 txt-10 pb-1">
+    <p class="col-xs-7 "><span class="match-date">Match 26</span></p>
+    <p class="col-xs-5 match-time">Tonight @ 8 PM</p>
+  </div>
+  <div class="col-md-12">
+    <div class="col-xs-6 py-4 team mum">Mumbai</div>
+    <!-- <div class="col-xs-2 py-4 vs">Vs</div> -->
+    <div class="col-xs-6 py-4 team ban">Bangaluru</div>
+  </div>
+</div>
+
+
+.regist-head{
+  position:relative;
+}
+.regist-head:before{
+   background: url(../img/bottle1.png) no-repeat;
+   background-repeat:no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   left:2%;
+   top:0;
+}
+.regist-head:after{
+   background: url(../img/bottle2.png) no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   right:2%;
+   top:0;
+}
+.txt-8{
+  font-size: 8px;
+}
+.txt-10{
+  font-size: 10px;
+}
+.team{
+  position: relative;
+  font-weight: bold;
+}
+.mum:after{
+  content: 'Vs';
+  color: #df0827;
+  font-weight: 650;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  font-size: 2rem;  
+}
+.mum:before{
+  background: url(../img/mum.png) no-repeat;
+   background-repeat:no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   left:-17%;
+   top:7px;
+}
+
+.ban:after{
+   background: url(../img/ban.png) no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   right:-40%;
+   top:7px;
+}
+.match-date{
+  margin-left: -2.6rem;
+}
+.match-time{
+  background: #9b9b9b;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 3px;
+  text-align: center;
+
+}
