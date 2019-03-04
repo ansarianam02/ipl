@@ -1,0 +1,245 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+  body{
+    /*height: 100vh;*/
+    /*padding: 0 2rem;*/
+  }
+}
+/*common css*/
+html, body {
+    overflow: auto;
+}
+body.register-page{
+    
+}
+#content{
+  min-height: 100vh;
+}
+section.footer-section{
+  position: relative;
+}
+section.footer-section::before {
+    background-image: url(../img/regist-mbl-bg.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: '';
+    position: absolute;
+    height: 31rem;
+    width: 100%;
+    top: -31rem;
+    z-index: -1;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background:none !important;
+}
+.navbar-inverse .navbar-toggle {
+    border: none !important;
+   /* background: #f7892f;*/
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+   background-color: #f13332 !important;
+}
+.navbar-brand img{
+ /* width:9rem;*/
+}
+.navbar-brand {
+  padding-top: 0px !important;
+  padding-left: 2.5rem;
+}
+.navbar-collapse{
+  margin-left: 12rem !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fbfbfb;
+    position: absolute;
+    z-index: 99;
+    width: 20rem;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  /* color: #f7892f !important;*/
+  cursor: pointer;
+}
+.container.main-area.bg{
+  background-image: url(../img/main-top.png);
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+}
+.main-area::after{
+
+}
+
+.corner-maza::after{
+    position: absolute;    
+    background-size: 100%;
+    display: inline-block;
+    height: 3rem;
+    width: 5rem;
+    content: '';
+    background-repeat: no-repeat;
+    right: 2rem;
+    top: 1rem;
+}
+.corner-maza.level1::after{
+    background-image: url(../img/corner-maaza1.svg) !important;
+}
+.corner-maza.level2::after{
+   background-image: url(../img/corner-maaza2.svg) !important;
+}
+.corner-maza.level3::after{
+    background-image: url(../img/corner-maaza3.svg) !important;
+}
+.corner-maza.level4::after{
+    background-image: url(../img/corner-maaza4.svg) !important;
+}
+.corner-maza.level5::after{
+    background-image: url(../img/corner-maaza5.svg) !important;
+}
+/*.regSection form , .otpSection form ,.moreDetailSection form{
+  padding: 1rem;
+    box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fbfbfb;
+    font-size: 1.3rem;
+}
+.form-control{
+  color: #929699;
+}
+.regist-head {
+    font-size: 1.3rem;
+}*/
+.red-t , .navbar-light .navbar-nav .nav-link{
+    color: #d51a1b !important;
+    cursor:pointer
+}
+.err-msg{
+  background:#ffe1e5;
+  color: #e74c3c;
+  border-radius: 6em;
+  padding: 5px 36px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.errs-msg{
+  background:#ffe1e5;
+  color: #e74c3c;
+  border-radius: 6em;
+  padding: 5px 36px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.banner-container {
+   background: url(../img/mbl-banner.png);
+   background-size: 100% 92%;
+   background-position: 0 2rem;
+   background-repeat: no-repeat;
+   margin-top: -9rem;
+}
+.navbar-inverse{
+  background:none !important;
+  border: none;
+}
+/*.otp-field ,.otp-warning {
+  margin:4rem 0 !important;
+}*/
+.banner-container .fake{
+    height: 13em;
+    width: 75%;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+}
+.modal-header {
+    text-align: center;
+}
+.modal{
+    margin-top: 3rem;
+}
+.modal-dialog{
+    margin-top: 20px;
+}
+.modal-header .close {
+  position: absolute;
+  right: -11px;
+  top: -15px;
+  background: white;
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: -1px 0px 7px 0px #999;
+  vertical-align: center;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 0;
+}
+.modal button.close:before {
+    content: "×";
+}
+.btn-submit{
+  width: 100%;
+  background:#f13332;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  font-size: 1.2rem;
+  padding: 0.9rem 1rem;
+}
+.btn-disabled{
+    opacity: 0.6 !important;
+}
+
+.footer-section{
+   background-image: linear-gradient(to top, #fad961, #f76b1c);
+   color:white;
+   font-size: 1.3rem;
+}
+.page-footer a{
+  color:white;  
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(213,26,27)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>''); 
+ }
+ .modal-header{
+    background: rgba(0, 0, 0, 0.1) !important;
+ }
+.modal-dialog {
+   margin: 20px;
+}
+button.btn:active {
+    box-shadow: 1px 2px 6px #33333391; 
+}
+.btn:focus ,.btn:active{
+  outline: none;
+}
+
+.otp-container{
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .main-area{
+        max-width: 445px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .main-area{
+        max-width: 445px !important;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {}

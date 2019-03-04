@@ -1,0 +1,30 @@
+.regSection .form , .otpSection .form ,.moreDetailSection .form ,.fillSection .form{
+  padding: 1rem;
+    box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fbfbfb;
+    font-size: 1.3rem;
+}
+.fillSection{
+  margin-bottom: 4rem !important;
+}
+.fillSection form{
+    box-shadow: none !important;
+}
+.form-control{
+  /*color: #929699;*/
+}
+select option:disabled {
+    color: #929699;
+}
+.regist-head {
+    font-size: 1.3rem;
+}
+
+.otp-field ,.otp-warning {
+  margin:4rem 0 !important;
+}
+.otp-warning {
+    letter-spacing: -0rem;
+    font-size: 16px;
+    font-weight: 500;
+}

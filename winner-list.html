@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maaza</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body class="register-page">
+
+<nav class="navbar navbar-inverse" style=>
+    <div class="container-fluid">
+      <div class="navbar-header">
+         <p class="level-info-container red-t font-weight-bold ">Current level :: <span class="level-stage"> MA</span></p>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">
+             <img src="img/icon/icon.png" class="d-inline-block align-top" alt=""> 
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" id="myNavbar" style="height: 1px;" aria-expanded="false">
+        
+        <ul class="nav navbar-nav navbar-right">               
+          <li><a class="redirect-level-page red-t">See lucky draw winners</a>
+              </li>
+         <li><a data-toggle="modal" data-target="#luckyModal" class="red-t">See rewards for different levels </a>
+              </li>      
+          <li><a href="http://maaza.bigcityexperience.com" target="_blank" class="red-t">Terms and conditions</a>
+              </li>
+          <li><a href="http://maaza.bigcityexperience.com" target="_blank" class="red-t">Contact us</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container"> 
+    <div class="row"> 
+        <div class="col-xs-12 text-center mt-5 mb-2">  <p class="red-t"> Lucky draw winners  </p> </div>
+        <div class="col-xs-12 text-center mb-2"> 
+            <div class="form-group">
+                <select  id="level" class="form-control" id="exampleFormControlSelect1" placeholder="">
+                   <option value="1">Level M</option>
+                  <option value="2">Level MA</option>
+                  <option value="3">Level MAA</option>
+                  <option value="4">Level MAAZ</option>
+                  <option value="5">Level MAAZA</option>
+                </select>        
+              </div>
+        </div>
+    </div>  
+</div>
+ <!--main partion -->
+<div class="container winner-name-list main-area register mt-2 mb-5">
+  <div> <!--class="row center-border" -->
+   
+    <div class="right-partition">
+      
+      <div class="container">
+        <div class="row">
+        
+        <div class="list-container my-4">
+          <div id="levelCorner" data-level="1" class="list-title font-weight-bold corner-maza level1"> Reward for this level 
+
+          </div>
+          <ul>
+            <li class="my-4"> 
+              <div id="partiImg" class="img-container">
+                
+              </div>
+                 <span class="partiText">Smart Backpack</span></li>
+           
+          </ul>
+        </div>
+
+        <div class="container">
+          <br><br>
+          <a class="btn btn-warning" href="http://maaza.bigcityexperience.com" target="_blank" style="margin: 30px 8rem;">Click here to see winners</a>
+          <br><br>
+        </div>
+
+
+<!-- 
+        <div class="list-container second my-5">
+          <div class="list-title py-4 font-weight-bold"> 
+            <span class="cell">Participant</span>
+            <span class="cell">City</span> 
+          </div>
+          <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell"> South Arictown</span>
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+           <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+          <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+          <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+          <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+          <div class="px-4 list-item"> 
+            <span class="cell"> Edvin Baker</span>
+            <span class="cell">South Arictown</span> 
+          </div>
+
+         
+        </div> -->
+
+          </div>
+   
+      </div>
+
+    </div>
+  </div>
+ <!-- end main partion -->
+</div>
+
+<!-- Modal -->
+<!-- <div id="myModal" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Terms and Condition</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+           Modal sample
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<div id="luckyModal" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h5 class="modal-title font-weight-bold">Lucky draw rewards - level wise</h5>
+      </div>
+      <div class="modal-body">
+            <div class="list-container">
+              <div class="list-title font-weight-bold corner-maza level1">Level M - Weekly </div>              
+                <p class="mx-3 my-4">  Philips Bass+ SHL3070 Headphones </p>              
+            </div>
+            <div class="list-container">
+              <div class="list-title font-weight-bold corner-maza level2">Level MA - Weekly</div>              
+                <p class="mx-3 my-4">  Anti-Theft Smart Bagpack </p>              
+            </div>
+            <div class="list-container">
+              <div class="list-title font-weight-bold corner-maza level3">Level MAA - Weekly</div>              
+                <p class="mx-3 my-4">  Fujifilm Instax Square SQ6 Instant Camera </p>              
+            </div>
+            <div class="list-container">
+              <div class="list-title font-weight-bold corner-maza level4">Level MAAZ - Weekly</div>              
+                <p class="mx-3 my-4">  Cannon EOS 3000D 18MP DSLR Camera </p>              
+            </div>
+            <div class="list-container">
+              <div class="list-title font-weight-bold corner-maza level5">Level MAAZA - Mega Draw </div>              
+                <p class="mx-3 my-4">  Smart phone - iPhone X (256 GB) </p>              
+            </div>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
+
+<!-- <div id="contactModal" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Contact Us;</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          Addres::
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!--end Modal -->
+
+<section class="footer-section mt-5 py-4">
+    <!-- Footer -->
+    <footer class="page-footer font-small">      
+      <!-- Copyright -->
+      <div class="footer-copyright text-center"> All rights reserved, 
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/">Bigcity Promotions, 2018</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+  </section>
+  <link rel="stylesheet" type="text/css" href="css/utilities.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css"> 
+  <link rel="stylesheet" type="text/css" href="css/limcaStyle.css"> 
+  <link rel="stylesheet" type="text/css" href="css/fillStyle.css">
+</body>
+<script type="text/javascript" src="js/winner.js"></script>
+
+<script type="text/javascript">
+  $('.btn-participate').hide();
+  $('.btn-later').hide();
+  
+
+  $(document).on('click','.btn-submit',function(e){
+    e.preventDefault();    
+  });
+  
+
+  $(document).on('click','.btn-fill',function(e){
+    e.preventDefault();
+    var ele= $(this);
+     ele.html('FILLING IN YOUR MAAZA…');
+     setTimeout(function(){  
+
+        ele.html('SCAN ANOTHER QR CODE TO GET MAAZA');
+         }, 3000);
+
+     $('.btn-participate').show();
+     $('.btn-later').show();
+     $('.status-title').html('Awww! You have run out of your maaza stock! Buy more to fill more…');
+     
+   
+  });
+</script>
+
+<style>
+.second .list-container {
+   padding: 5rem 1.5rem !important;
+}
+.list-container .cell{
+   width:48%;
+   display: inline-block;
+}
+.list-item{
+  border-bottom: 1px solid #979797; 
+  padding-top: 1.8rem !important;
+  padding-bottom: 1.8rem !important;
+}
+.winner-name-list{
+  margin-bottom: 10rem !important;
+}
+.partiText{
+  padding-left: 2rem;
+}
+</style>
+</html>

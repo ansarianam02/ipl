@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MAAZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/cookiealert.css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body class="register-page">
+<div id="content">
+<nav class="navbar navbar-inverse" style=>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">
+             <img src="img/icon/icon.png" class="d-inline-block align-top" alt=""> 
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" id="myNavbar" style="height: 1px;" aria-expanded="false">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a data-toggle="modal" data-target="#myModal" class="red-t">Terms and conditions</a> -->
+          <li><a href="http://maaza.bigcityexperience.com" target="_blank" class="red-t">Terms and conditions</a>
+              </li>
+          <!-- <li><a data-toggle="modal" data-target="#contactModal" class="red-t">Contact us</a> -->
+          <li><a href="http://maaza.bigcityexperience.com" target="_blank" class="red-t">Contact us</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- mega for banner -->
+    <div class="container hidden-md hidden-lg hidden-sm visible-xs banner-container mb-4">
+        <div class="row align-items-center mt-5 fake">              
+            </div>
+    </div>
+    <!-- end mega for banner  -->
+
+<!-- cookies start -->
+<div class="alert alert-dismissible text-center cookiealert" role="alert">
+  <div class="cookiealert-container">
+      <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="http://maaza.bigcityexperience.com" target="_blank">Learn more</a>
+      <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+          I agree
+      </button>
+  </div>
+</div>
+
+<!-- cookies end -->
+
+
+ <!--main partion -->
+<div class="container err-container" style="display: none">
+  <div class="row">
+     <div class="col-md-12">
+        <div class="form-group">   
+            <div class="err-msg" >
+                
+            </div>
+        </div>
+     </div>
+  </div>
+</div>
+<div class="container main-area register bg">
+  <div> <!--class="row center-border" -->
+   
+    <div class="right-partition">
+      <!-- regist Section -->
+       <div class="row justify-content-md-center regSection" style="display: block;">
+        <div class="col-md-10 col-md-offset-1">
+       <div class="mb-5 form">
+        <div class="red-t my-4  font-weight-bold text-center regist-head">  PLEASE ENTER YOUR MOBILE NUMBER </div>        
+       <div class="form-group my-5">
+        <input type="number" class="form-control" id="phonenumber"  placeholder="Mobile number*">
+      </div>
+       
+      <div class="form-group form-check">
+      <p class="form-check-label">
+        <input class="form-check-input" id="terms" type="checkbox"> I agree to program’s <a class="red-t cursor" data-toggle="modal" data-target="#myModal"> terms and conditions </a>
+        </p>
+      </div>
+      
+       <div class="form-group">
+        <button type="submit" class="btn btn-submit btn-mobile-submit">Submit</button>
+        </div>
+    </div></div>
+       </div>
+    <!-- end regist section -->
+
+    <!-- OTP section -->
+
+    <div class="row justify-content-md-center otpSection mb-5" style="display:none;">
+      <div class="container errs-container" style="display: none">
+  <div class="row">
+     <div class="col-md-12">
+        <div class="form-group">   
+            <div class="errs-msg" >
+                
+            </div>
+        </div>
+     </div>
+  </div>
+</div>
+        <div class="col-md-10 col-md-offset-1">
+       <div class="form">
+        <div class="row justify-content-md-center gray-t">
+            <div class="red-t my-4  font-weight-bold text-center regist-head"> VALIDATE YOUR MOBILE NUMBER </div>
+            
+            <div class="col-md-10 col-md-offset-1 mb-2 mt-2 text-center"> <h6>Please enter the One Time Password (OTP) <br/> sent to +91 - <span id="replacemob">9876543210</span> </h6></div>
+            <div class="col-md-12 my-5">             
+              <div class="form-group otp-field">        
+                <input type="text" class="form-control" id="otpvalue" placeholder="Enter OTP here">
+              </div>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 text-center my-5 otp-warning otp-container">
+              <div class="form-check-label" id="resendotp">
+                Resend OTP 
+                </div>
+                <p class="resendMsg" style="display: none">OTP is sent again! </p>
+                <h5 class="timeContainer">in <span id="countdowntimer">30</span> seconds</h5>
+
+
+            </div>           
+
+            <div class="col-md-12 mt-4">
+              <div class="form-group">
+                <button type="submit" class="btn btn-submit validate-otp">VALIDATE WITH OTP</button>
+               </div>
+            </div>  
+        </div>
+
+       </div></div>
+       </div>
+
+     <!-- end OTP -->
+      
+
+      <!-- -->
+       <div class="row justify-content-md-center moreDetailSection mb-5" style="display: none;">
+        <div class="col-md-10 col-md-offset-1">
+             <div class="form">
+              <div class="red-t m-4  font-weight-bold text-center regist-head"> INSTRUCTIONS AND REGISTRATION </div>
+              
+              <div class="form-group">        
+                <input type="text" class="form-control" id="firstname" placeholder="Full name*">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email ID*">
+              </div>
+              <div class="form-group">
+                <!-- <input type="number" class="form-control" id="age" placeholder="Please enter your Age"> -->
+                <select value="" class="form-control" id="age" placeholder="">
+                  <option value="" disabled selected>Select your age*</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>Above 30</option>
+                </select>
+
+              </div>
+
+               <div class="form-group">
+                <select class="form-control" id="gender" placeholder="">
+                  <option value="" disabled selected>Select your gender*</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>        
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="state" placeholder="">
+                  <option value="" disabled selected>City you reside in*</option>
+                  <option>Adra</option>
+                  <option>Alipurduar</option>
+                  <option>Arambagh</option>
+                  <option>Asansol</option>
+                  <option>Baharampur</option>
+                  <option>Bally</option>
+                  <option>Balurghat</option>
+                  <option>Bankura</option>
+                  <option>Barakar</option>
+                  <option>Barasat</option>
+                  <option>Bardhaman</option>
+                  <option>Barrackpur</option>
+                  <option>Bidhan Nagar</option>
+                  <option>Burdwan</option>
+                  <option>Chinsura</option>
+                  <option>Contai</option>
+                  <option>Cooch Behar</option>
+                  <option>Dalkhola</option>
+                  <option>Darjeeling</option>
+                  <option>Dhulian</option>
+                  <option>Dumdum</option>
+                  <option>Durgapur</option>
+                  <option>Haldia</option>
+                  <option>Hoogly</option>
+                  <option>Howrah</option>
+                  <option>Hugli-Chuchura</option>
+                  <option>Islampur</option>
+                  <option>Jhargram</option>
+                  <option>Kalimpong</option>
+                  <option>Kalyani</option>
+                  <option>Kharagpur</option>
+                  <option>Kolkata</option>
+                  <option>Konnagar</option>
+                  <option>Krishnanagar</option>
+                  <option>Mainaguri</option>
+                  <option>Mal</option>
+                  <option>Mathabhanga</option>
+                  <option>Medinipur</option>
+                  <option>Memari</option>
+                  <option>Monoharpur</option>
+                  <option>Murshidabad</option>
+                  <option>Nabadwip</option>
+                  <option>Naihati</option>
+                  <option>Panchla</option>
+                  <option>Pandua</option>
+                  <option>Paschim Punropara</option>
+                  <option>Purulia</option>
+                  <option>Raghunathpur</option>
+                  <option>Raiganj</option>
+                  <option>Rampurhat</option>
+                  <option>Ranaghat</option>
+                  <option>Sainthia</option>
+                  <option>Santipur</option>
+                  <option>Siliguri</option>
+                  <option>Sonamukhi</option>
+                  <option>Srirampore</option>
+                  <option>Suri</option>
+                  <option>Taki</option>
+                  <option>Tamluk</option>
+                  <option>Tarakeswar</option>
+                </select>
+              </div>             
+
+               <div class="form-group">
+                <button type="submit" class="btn btn-submit btn-detail-submit">Submit</button>
+                </div>
+            </div>
+          </div>
+       </div>
+      <!-- -->
+    </div>
+
+    
+     <!--end second partion -->
+
+       <!--first partion -->
+      <!-- <div class="col-sm-7 left-partition visible-md visible-lg visible-sm hidden-xs " style="position: relative;">
+        <div class="row carousal-row">
+           <div class="backImg">
+           
+           </div>
+        </div>
+      </div> -->
+    <!--end first partion -->
+
+  </div>
+</div>
+ <!-- end main partion -->
+
+
+<!-- Modal -->
+<!-- <div id="myModal" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Terms and Condition</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+           Modal sample
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="contactModal" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Contact Us;</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          Addres::
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+<!-- end Modal -->
+
+</div>
+
+<section class="footer-section py-4">
+    <!-- Footer -->
+    <footer class="page-footer font-small">      
+      <!-- Copyright -->
+      <div class="footer-copyright text-center"> All rights reserved, 
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/">Bigcity Promotions, 2018</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+  </section>
+  <link rel="stylesheet" type="text/css" href="css/utilities.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css"> 
+  <link rel="stylesheet" type="text/css" href="css/limcaStyle.css"> 
+ <script type="text/javascript" src="js/main.js"></script> 
+ <script type="text/javascript" src="js/cookiealert.js"></script>
+</body>
+
+<script type="text/javascript">
+    
+</script>
+
+</html>

@@ -1,0 +1,215 @@
+.startplaying{
+      margin-left: -2rem;
+    width: 111%;
+    background: #f13332;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1.5rem 1rem;
+    box-shadow: 3px 3px 9px 1px #b34949;
+    margin-top: -25px;
+}                            
+.circle{
+  background: url(../img/oval.svg);
+    background-repeat: no-repeat;
+    background-size: 72%;
+        background-position: 70% 46%;
+    display: inline-block;
+    min-width: 24%;
+    height: 8rem;
+    position: relative;
+}
+.introtxt{
+       position: absolute;
+    bottom: -1.9rem;
+    /* left: 1.8rem; */
+    /* margin-top: 7rem; */
+    font-size: 8px;
+    white-space: nowrap;
+    left: 50%;
+    padding-left: 2rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.introtxt1{
+    position: absolute;
+    bottom: -2.8rem;
+    left: 1.3rem;
+    font-size: 8px;
+        white-space: nowrap;
+        display: none
+}
+.introtxt span{
+    margin-left: 1.5rem;
+}
+.introtxt4 span{
+    margin-left: 1.2rem;   
+}
+.gift2:before{
+  content: '';
+  background:url('../img/Smart Backpack.png');
+  background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 1.85rem;
+        left: 2rem;
+    width: 4rem;
+    height: 4rem;
+       background-size: 100% 100%;
+    background-position: center;
+    border-radius: 18%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:55%;
+}
+.gift1::before{
+  content: '';
+  background:url('../img/Headphone.png');
+  background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 1.85rem;
+        left: 1.9rem;
+    width: 4rem;
+    height: 5rem;
+       background-size: 100% 100%;
+    background-position: center;
+    border-radius: 18%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:55%;
+}
+.gift3::before{
+  content: '';
+  background:url('../img/Instant Camera.png');
+  background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 2.2rem;
+    left: 2.4rem;
+    width: 3.3rem;
+    height: 3.5rem;
+       background-size: 100% 100%;
+    background-position: center;
+    border-radius: 18%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:55%;
+}
+.gift4::before{
+  content: '';
+ content: '';
+  background:url('../img/DSLR Camera.png');
+  background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 1.85rem;
+    left:2.2rem;
+    width: 4rem;
+    height: 4rem;
+       background-size: 100% 100%;
+    background-position: center;
+    border-radius: 18%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:55%;
+}
+.tild-corner{
+ background-image: url(../img/rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+.corner-maza::after{
+  right: 1.3rem !important;
+    top: 9rem !important; 
+}
+.chse-txt{
+    font-size: 11px;
+    white-space: nowrap;
+}
+.tildlabel{
+    position: relative;
+}
+.tildlabel::before {
+    content: '';
+    background: url(../img/title-bg1.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1.7rem;
+    right: 2rem;
+    height: 3rem;
+    width: 17rem;
+}
+.tild-corner2::before {
+   content: '';
+    background: url(../img/title-bg2.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1.0rem;
+    right: 15rem;
+    height: 3rem;
+    width: 17rem;
+}
+.gray{
+  color: #4a4a4a !important;
+}
+.tild-corner2 .circle{
+  min-width: 30%;
+    height: 13rem;
+    margin-left: 20px;
+}
+.tild-corner2 {
+  position: relative;
+}
+.tild-corner2::after{
+   content: '';
+    background: url(../img/corner-maaza5.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+    height: 6rem;
+    width: 13rem;
+}
+.right-text{
+      position: absolute;
+    right: 5rem;
+    top: 8rem;
+    text-align: center;
+    font-size: 12px;
+}
+.tild-corner2 .gift1:before {
+    content: '';
+    background: url(../img/Smartphone.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 4.2rem;
+    width: 3.5rem;
+    /*left: 3.2rem;*/
+    height: 4rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18%;
+     -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:55%;
+}
+
+@media (min-width: 992px) {
+  .main-area{
+        max-width: 445px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .main-area{
+        max-width: 445px !important;
+  }
+}
