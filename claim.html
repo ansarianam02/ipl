@@ -92,6 +92,17 @@
         <h3 class="my-4  font-weight-bold text-center claim-head red-t"> Enter voucher <br/> <span class="font-weight-bold"> code to begin </span></h3>
       </div>
       <div class="modal-body">
+        <div class="err-container pt-4" style="display: ">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="form-group">   
+                    <div class="err-msg" >
+                        Please Enter valid Vouchar code
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div> 
         <div class="form-group my-3 ">
           <input type="number" class="form-control" id="vouchercode"  placeholder="Enter voucher code here**">
         </div>
@@ -110,6 +121,34 @@
   </div>
 </div> 
 <!-- end Modal -->
+
+<!-- claim modal-->
+<div id="claimModal2" class="modal fade claim" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>        
+      </div>
+      <div class="modal-body">
+        <div class="form-group my-3 mx-5 nolive text-center">
+          <p class="pt-5 font-weight-bold">No LIVE match is going. We’ll send you a reminder once it begins.</p>
+        </div>
+        <ul class="claim-list">
+          <li>You can enter a match 30 mins prior to when it begins.</li>
+          <li>We’ll send you an email reminder once a match begins.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group px-5">
+        <button type="submit" class="btn btn-submit btn-mobile-submit">Send me a reminder</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> 
+<!-- end Modal -->
+
 <section class="footer-section py-4">
     <!-- Footer -->
     <footer class="page-footer font-small">      
@@ -130,9 +169,11 @@
 <script type="text/javascript">
   $(function(){
     
-
     $(document).on('click','.claim1',function(){
         $('#claimModal').modal();
+    })
+    $(document).on('click','.claim2',function(){
+        $('#claimModal2').modal();
     })
   })
 </script>

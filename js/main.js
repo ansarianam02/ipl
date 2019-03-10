@@ -16,7 +16,7 @@ var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 //comment the above for testing on desktop
 
 //Initial call to get token val
- initCall();
+ //initCall();
  function hideError(){
     $('.err-container').hide();
    }

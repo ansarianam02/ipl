@@ -32,7 +32,7 @@ section.footer-section::before {
     top: -15rem;
     z-index: -1;
 }
-.otp.section.footer-section::before {
+/*.otp.section.footer-section::before {
     background-image: url(../img/regist-mbl-bg.png) !important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -44,6 +44,10 @@ section.footer-section::before {
     z-index: -1;
 }
 
+*/
+section.game.footer-section::before{
+  background: none !important;
+}
 .navbar-inverse {
     background-color: #fff;
     border-color: #fff;
@@ -187,8 +191,7 @@ section.footer-section::before {
 }
 .modal-header .close {
   position: absolute;
-  right: -11px;
-  top: -15px;
+  right: 16rem;    
   background: white;
   border-radius: 50%;
   opacity: 1;
@@ -198,9 +201,11 @@ section.footer-section::before {
   height: 3rem;
   text-align: center;
   line-height: 0;
+  bottom: -5rem;
+  background: url(../img/close.png);
 }
 .modal button.close:before {
-    content: "×";
+
 }
 .btn-submit{
   width: 100%;
@@ -209,11 +214,38 @@ section.footer-section::before {
   cursor: pointer !important;
   font-size: 1.2rem;
   padding: 0.9rem 1rem;
+  text-transform: uppercase;
 }
 .btn-disabled{
     opacity: 0.6 !important;
 }
-
+.color-white{
+  color: white
+}
+.panel{
+  /*background: #4a4a4a;
+  opacity: 0.5;*/
+}
+.btn-live{
+  background: #d0021b;
+  display: inline-block;
+  padding: 0.3rem 1rem 0.3rem 1.5rem;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  margin-right: 2rem;
+}
+.btn-live:after{
+  content: '.';
+  position: absolute;
+  font-size: 4.5rem;
+  width: 1rem;
+  height: 1rem;
+  top: -3.3rem;
+  left: 0.25rem;
+  color: white;
+  font-weight: 500;
+}
 .footer-section{
    font-size: 1.3rem;
 }
@@ -292,6 +324,7 @@ button.btn:active {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
 
 @media (min-width: 992px) {
   .main-area{
