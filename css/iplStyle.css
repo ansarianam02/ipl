@@ -4,3 +4,75 @@
     background-color: #fbfbfb;
     font-size: 1.3rem;
 }
+.regist-head{
+  position:relative;
+}
+.regist-head:before{
+   background: url(../img/bottle1.png) no-repeat;
+   background-repeat:no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   left:2%;
+   top:0;
+}
+.regist-head:after{
+   background: url(../img/bottle2.png) no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   right:2%;
+   top:0;
+}
+.claim-head:before{
+   background: url(../img/batsman-r.png) no-repeat;
+   background-repeat:no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   left:2%;
+   top:0;
+}
+.claim-head:after{
+   background: url(../img/batsman-l.png) no-repeat;
+   content: '';
+   position:absolute;
+   height:5rem;
+   width:6rem;
+   right:2%;
+   top:0;
+}
+.claim-head{
+  position: relative;
+}
+.btn-claim{
+	border: 2px solid #df0827;
+    color: #df0827;
+    background: #fff;
+    height: 10rem !important;
+    padding: 0 3rem !important;
+    font-size: 1.35rem !important;
+}
+.claim-list{
+	position: relative;
+}
+.claim-list li{
+	font-size: 1.6rem;
+    margin: 4rem 0;
+    list-style: none;
+}
+.claim-list li:nth-child(2){
+	margin-bottom: 1rem !important;
+    
+}
+.claim-list li:before{
+	content: '';
+	position: absolute;
+	height: 2rem;
+	width:3rem;
+	background:url('../img/cricketBall.png') no-repeat;
+	left: 1rem;
+}
